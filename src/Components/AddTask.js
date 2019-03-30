@@ -44,7 +44,7 @@ class AddTask extends Component {
     let maxDate = this.minDate.slice(0, 4) * 1 + 1;
     maxDate = maxDate + "-12-31";
     return (
-      <form>
+      <div>
         <input
           name="text"
           type="text"
@@ -76,7 +76,7 @@ class AddTask extends Component {
           />
         </label>
         <button onClick={this.handleClick}>Dodaj</button>
-      </form>
+      </div>
     );
   }
 }
