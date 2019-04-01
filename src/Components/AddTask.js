@@ -9,9 +9,7 @@ class AddTask extends Component {
   };
 
   handleState = e => {
-    const name = e.target.name;
-    const type = e.target.type;
-    const value = e.target.value;
+    const { name, type, value } = e.target;
 
     if (type === "text" || type === "date") {
       this.setState({

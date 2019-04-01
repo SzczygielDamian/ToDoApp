@@ -39,7 +39,6 @@ class App extends Component {
   };
 
   ChangeTaskStatus = id => {
-    console.log("Change  id " + id);
     const tasks = [...this.state.task];
     tasks.forEach(task => {
       if (task.id === id) {
